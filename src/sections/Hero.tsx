@@ -4,9 +4,9 @@ import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Suspense } from "react";
-import { FemaleBody } from "@/components/FemaleBody";
 import Loader from "@/components/Loader";
 import ParallaxBackground from "@/components/ParallaxBackground";
+import { Motants } from "@/components/Motants";
 
 const Hero = () => {
     const isMobile = useMediaQuery({ maxWidth: 853 });
@@ -26,8 +26,8 @@ const Hero = () => {
 
                     <Suspense fallback={<Loader />}>
                         <Float>
-                            <FemaleBody
-                                scale={isMobile ? 1 : undefined}
+                            <Motants
+                                scale={isMobile ? 0.8 : undefined}
                                 position={isMobile ? [0, -1.5, 0.5] : undefined}
                             />
 
