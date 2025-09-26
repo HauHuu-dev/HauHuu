@@ -4,7 +4,7 @@ import { Float } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import { easing } from "maath";
 import { Suspense } from "react";
-import { Astronaut } from "@/components/Astronaut";
+import { FemaleBody } from "@/components/FemaleBody";
 import Loader from "@/components/Loader";
 import ParallaxBackground from "@/components/ParallaxBackground";
 
@@ -26,7 +26,7 @@ const Hero = () => {
 
                     <Suspense fallback={<Loader />}>
                         <Float>
-                            <Astronaut
+                            <FemaleBody
                                 scale={isMobile ? 1 : undefined}
                                 position={isMobile ? [0, -1.5, 0.5] : undefined}
                             />

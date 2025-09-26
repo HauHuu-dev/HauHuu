@@ -12,7 +12,7 @@ import { Group } from 'three'
 import { useMotionValue, useSpring } from 'motion/react'
 import { useFrame } from '@react-three/fiber'
 
-export function Astronaut(props: any) {
+export function FemaleBody(props: any) {
     const group = useRef<Group>(null)
     const { nodes, materials, animations } = useGLTF('/models/female_body_type_a.glb') as any
     const { actions } = useAnimations(animations, group)
