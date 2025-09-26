@@ -6,7 +6,7 @@ Source: https://sketchfab.com/3d-models/female-body-type-a-dc7fa4ea4eca4ec89bd29
 Title: Female Body Type A
 */
 
-import React, { useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 import { Group } from 'three'
 import { useMotionValue, useSpring } from 'motion/react'
